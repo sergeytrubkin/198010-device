@@ -3,41 +3,55 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Девайс</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="header">
-		<a href="#" class="header__logo">device</a>
-		<div class="header__top_menu">
+	<header class="header container">
+		<a href="#" class="header__logo"><h1 class="logo__name">Device</h1></a>
+		<div class="header__top_menu clearfix">
 			<form action="#" class="header__form_search">
 				<input type="text" placeholder="Поиск по сайту">
-				<button class="submit">Найти</button>
+				<button type="submit" class="header__btn_search">Найти</button>
 			</form>
 			<div class="header__user_block">
-				<div class="block_input">
-					<a href="#" class="link_input">Войти</a>
-				</div>
-				<div class="block_items">
-					<ul class="link_items">
-						<li class="compare"><a href="#">Сравнить</a></li>
-						<li class="shopping"><a href="#">Корзина</a></li>
-					</ul>
-				</div>
+				<ul class="header__menu">
+					<li class="header__menu_item">
+						<a href="#" class="link__input">Войти</a>
+					</li>
+					<li class="header__menu_item">
+						<a href="#" class="link__compare">Сравнить</a>
+					</li>
+					<li class="header__menu_item">
+						<a href="#" class="link__shopping">Корзина</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div class="header__bottom_menu">
+		<div class="header__bottom_menu clearfix">
 			<div class="header__catalog_items">
-				<a href="#">Каталог товаров</a>
+				<a href="#">
+					<span class="header__bottom_text">Каталог товаров</span>
+				</a>
 			</div>
 			<div class="header__info_block">
-				<div class="header__info_service">
-					<ul>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Гаранития</a></li>
-					</ul>
-				</div>
-				<div class="header__info_contacts">
-					<a href="#">Контакты</a>
-				</div>
+				<ul class="header__info_menu">
+					<li class="info__menu_item">
+						<a href="#" class="header__menu_link"> 
+							<span class="header__bottom_text">Доставка</span> 
+						</a>
+					</li>
+					<li class="info__menu_item">
+						<a href="#" class="header__menu_link">
+							<span class="header__bottom_text">Гаранития</span>
+						</a>
+					</li>
+					<li class="info__menu_item">
+						<a href="#" class="header__menu_link">
+							<span class="header__bottom_text">Контакты</span>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="header__list_item">
@@ -71,7 +85,7 @@
 					<div class="dash"></div>
 					<div class="main__number_item">01</div>
 					<div class="main__text-block">
-						<h1>Делай селфи, как Бен Стиллер!</h1>
+						<h2>Делай селфи, как Бен Стиллер!</h2>
 						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 					</div>
 					<div class="link__info_item">
@@ -99,7 +113,7 @@
 					<div class="dash"></div>
 					<div class="main__number_item">02</div>
 					<div class="main__text-block">
-						<h1>Худеем правильно!</h1>
+						<h2>Худеем правильно!</h2>
 						<p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 					</div>
 					<div class="link__info_item">
@@ -119,7 +133,7 @@
 					<div class="dash"></div>
 					<div class="main__number_item">03</div>
 					<div class="main__text-block">
-						<h1>Порхает как бабочка, жалит как пчела!</h1>
+						<h2>Порхает как бабочка, жалит как пчела!</h2>
 						<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 					</div>
 					<div class="link__info_item">
@@ -282,7 +296,7 @@
 			<div class="footer__top_content">
 				<div class="footer_logo">
 					<a href="" class="footer__link_logo">
-						<span class="footer__logo_text">Device</span>
+						<h1 class="footer__logo_text">Device</h1>
 					</a>
 				</div>
 				<div class="footer__user_block">

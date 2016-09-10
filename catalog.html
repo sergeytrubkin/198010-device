@@ -3,72 +3,72 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Девайс</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header">
-		<a href="#" class="header__logo">device</a>
-		<div class="header__top_menu">
+		<a href="#" class="header__logo"><h1 class="logo__name">Device</h1></a>
+		<div class="header__top_menu clearfix">
 			<form action="#" class="header__form_search">
 				<input type="text" placeholder="Поиск по сайту">
-				<button class="submit">Найти</button>
+				<button type="submit" class="header__btn_search">Найти</button>
 			</form>
 			<div class="header__user_block">
-				<div class="block__input">
-					<a href="#" class="link__input">Войти</a>
-					<a href="#" class="link__output">Выйти</a>
-				</div>
-				<div class="block__items">
-					<ul class="link__items">
-						<li class="compare">
-							<a href="#">Сравнить</a>
-						</li>
-						<li class="shopping">
-							<a href="#">Корзина</a>
-						</li>
-					</ul>
-				</div>
+				<ul class="header__menu">
+					<li class="header__menu_item">
+						<a href="#" class="link__input">Войти</a>
+					</li>
+					<li class="header__menu_item">
+						<a href="#" class="link__compare">Сравнить</a>
+					</li>
+					<li class="header__menu_item">
+						<a href="#" class="link__shopping">Корзина</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div class="header__bottom_menu">
+		<div class="header__bottom_menu clearfix">
 			<div class="header__catalog_items">
-				<a href="#">Каталог товаров</a>
+				<a href="#">
+					<span class="header__bottom_text">Каталог товаров</span>
+				</a>
 			</div>
 			<div class="header__info_block">
-				<div class="header__info_service">
-					<ul>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Гаранития</a></li>
-					</ul>
-				</div>
-				<div class="header__info_contacts">
-					<a href="#">Контакты</a>
-				</div>
+				<ul class="header__info_menu">
+					<li class="info__menu_item">
+						<a href="#" class="header__menu_link"> 
+							<span class="header__bottom_text">Доставка</span> 
+						</a>
+					</li>
+					<li class="info__menu_item">
+						<a href="#" class="header__menu_link">
+							<span class="header__bottom_text">Гаранития</span>
+						</a>
+					</li>
+					<li class="info__menu_item">
+						<a href="#" class="header__menu_link">
+							<span class="header__bottom_text">Контакты</span>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="header__list_item">
-			<div class="header__list_item">
-				<ul>
-					<li><a href="#">Виртуальная реальность</a></li>
-					<li><a href="#">Моноподы для селфи</a></li>
-					<li><a href="#">Экшн-катеры</a></li>
-				</ul>
-			</div>
-			<div class="header__list_item">
-				<ul>
-					<li><a href="#">Фитнесс-браслеты</a></li>
-					<li><a href="#">Умные часы</a></li>
-				</ul>
-			</div>
-			<div class="header__list_item">
-				<ul>
-					<li><a href="#">Квадрокоптеры</a></li>
-				</ul>
-			</div>
+			<ul>
+				<li><a href="#">Фитнесс-браслеты</a></li>
+				<li><a href="#">Умные часы</a></li>
+			</ul>
+		</div>
+		<div class="header__list_item">
+			<ul>
+				<li><a href="#">Квадрокоптеры</a></li>
+			</ul>
 		</div>
 	</header>
 	<main class="main">
 		<div class="main__breadcrumbs_block">
-			<h1 class="main__title">Моноподы для селфи</h1>
+			<h2 class="main__title">Моноподы для селфи</h2>
 			<ul class="breadcrumbs__menu">
 				<li class="breadcrumbs__menu_item">
 					<a href="#" class="breadcrumbs__item_link">
