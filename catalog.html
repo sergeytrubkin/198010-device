@@ -7,13 +7,16 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="header">
+	<header class="header container">
 		<a href="#" class="header__logo"><h1 class="logo__name">Device</h1></a>
 		<div class="header__top_menu clearfix">
-			<form action="#" class="header__form_search">
-				<input type="text" placeholder="Поиск по сайту">
-				<button type="submit" class="header__btn_search">Найти</button>
-			</form>
+			<div class="heder__search_content">
+				<form action="#" class="header__form_search">
+					<label for="header__search" class="header__search_name">Поиск по сайту</label>
+					<input id="header__search" type="text" placeholder="Поиск по сайту" class="header__search_active" value="">
+					<button type="submit" class="header__btn_search">Найти</button>
+				</form>
+			</div>			
 			<div class="header__user_block">
 				<ul class="header__menu">
 					<li class="header__menu_item">
@@ -43,7 +46,7 @@
 					</li>
 					<li class="info__menu_item">
 						<a href="#" class="header__menu_link">
-							<span class="header__bottom_text">Гаранития</span>
+							<span class="header__bottom_text">Гарантия</span>
 						</a>
 					</li>
 					<li class="info__menu_item">
@@ -55,15 +58,24 @@
 			</div>
 		</div>
 		<div class="header__list_item">
-			<ul>
-				<li><a href="#">Фитнесс-браслеты</a></li>
-				<li><a href="#">Умные часы</a></li>
-			</ul>
-		</div>
-		<div class="header__list_item">
-			<ul>
-				<li><a href="#">Квадрокоптеры</a></li>
-			</ul>
+			<div class="header__list_item">
+				<ul>
+					<li><a href="#">Виртуальная реальность</a></li>
+					<li><a href="#">Моноподы для селфи</a></li>
+					<li><a href="#">Экшн-камеры</a></li>
+				</ul>
+			</div>
+			<div class="header__list_item">
+				<ul>
+					<li><a href="#">Фитнесс-браслеты</a></li>
+					<li><a href="#">Умные часы</a></li>
+				</ul>
+			</div>
+			<div class="header__list_item">
+				<ul>
+					<li><a href="#">Квадрокоптеры</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
 	<main class="main">

@@ -10,10 +10,13 @@
 	<header class="header container">
 		<a href="#" class="header__logo"><h1 class="logo__name">Device</h1></a>
 		<div class="header__top_menu clearfix">
-			<form action="#" class="header__form_search">
-				<input type="text" placeholder="Поиск по сайту">
-				<button type="submit" class="header__btn_search">Найти</button>
-			</form>
+			<div class="heder__search_content">
+				<form action="#" class="header__form_search">
+					<label for="header__search" class="header__search_name">Поиск по сайту</label>
+					<input id="header__search" type="text" placeholder="Поиск по сайту" class="header__search_active" value="">
+					<button type="submit" class="header__btn_search">Найти</button>
+				</form>
+			</div>			
 			<div class="header__user_block">
 				<ul class="header__menu">
 					<li class="header__menu_item">
@@ -43,7 +46,7 @@
 					</li>
 					<li class="info__menu_item">
 						<a href="#" class="header__menu_link">
-							<span class="header__bottom_text">Гаранития</span>
+							<span class="header__bottom_text">Гарантия</span>
 						</a>
 					</li>
 					<li class="info__menu_item">
@@ -77,14 +80,18 @@
 	</header>
 	<main class="main">
 		<div class="main__sliders_item">
-			<div class="main__slide_item clearfix" id="slide_1">
+			<div class="main__sliders_bg"></div>
+			<input type="radio" id="btn_1" name="toggle" checked >
+			<input type="radio" id="btn_2" name="toggle">
+			<input type="radio" id="btn_3" name="toggle">
+			<div class="main__slide clearfix" id="slide_1">
 				<div class="main__img_item">
 					<img src="img/item-1.png" alt="палка для селфи" width="384" height="486">
 				</div>
 				<div class="main__description_item">
 					<div class="dash"></div>
 					<div class="main__number_item">01</div>
-					<div class="main__text-block">
+					<div class="main__text_block">
 						<h2>Делай селфи, как Бен Стиллер!</h2>
 						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 					</div>
@@ -105,14 +112,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="main__slide_item clearfix" id="slide_2">
+			<div class="main__slide clearfix" id="slide_2">
 				<div class="main__img_item">
 					<img src="img/item-2.png" alt="фитнесс-браслет" width="345" height="485">
 				</div>
 				<div class="main__description_item">
 					<div class="dash"></div>
 					<div class="main__number_item">02</div>
-					<div class="main__text-block">
+					<div class="main__text_block">
 						<h2>Худеем правильно!</h2>
 						<p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 					</div>
@@ -125,14 +132,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="main__slide_item clearfix" id="slide_3">
+			<div class="main__slide clearfix" id="slide_3">
 				<div class="main__img_item">
 					<img src="img/item-3.png" alt="квадрокоптер" width="526" height="334">
 				</div>
 				<div class="main__description_item">
 					<div class="dash"></div>
 					<div class="main__number_item">03</div>
-					<div class="main__text-block">
+					<div class="main__text_block">
 						<h2>Порхает как бабочка, жалит как пчела!</h2>
 						<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 					</div>
@@ -149,51 +156,60 @@
 					</div>
 				</div>
 			</div>
-			<div class="main__slider_control">
-				<label for="btn_1"></label>
-				<label for="btn_2"></label>
-				<label for="btn_3"></label>
-				<input type="radio" id="btn_1" name="toggle" checked >
-				<input type="radio" id="btn_2" name="toggle">
-				<input type="radio" id="btn_3" name="toggle">
+			<div class="slider__control">
+				<label for="btn_1" class="slider__btn"></label>
+				<label for="btn_2" class="slider__btn"></label>
+				<label for="btn_3" class="slider__btn"></label>
 			</div>
 		</div>
 
-		<div class="main__items_block clearfix">
-			<ul class="items__block">
+		<div class="main__items_block">
+			<ul class="items__block clearfix">
 				<li class="item__list">
 					<a href="#" class="link_item">
-						<img src="img/icon.png" alt="Виртуальная радость" class="link__item_icon">
+						<div class="item__icon_block">
+							<img src="img/popular-1.png" alt="Виртуальная радость" class="link__item_icon">
+						</div>
 						<span class="link__item_text">Виртуальная радость</span>
 					</a>
 				</li>
 				<li class="item__list">
 					<a href="#" class="link__item">
-						<img src="img/icon.png" alt="Монопады для селфи" class="link__item_icon">
+						<div class="item__icon_block">
+						<img src="img/popular-2.png" alt="Монопады для селфи" class="link__item_icon  icon__position">
+						</div>
 						<span class="link__item_text">Монопады для селфи</span>
 					</a>
 				</li>
 				<li class="item__list">
 					<a href="#" class="link__item">
-						<img src="img/icon.png" alt="Экшн-камеры" class="link__item_icon">
+						<div class="item__icon_block">
+							<img src="img/popular-3.png" alt="Экшн-камеры" class="link__item_icon">
+						</div>
 						<span class="link__item_text">Экшн-камеры</span>
 					</a>
 				</li>
 				<li class="item__list">
 					<a href="#" class="link__item">
-						<img src="img/icon.png" alt="Фитнесс-браслеты" class="link__item_icon">
-						<span class="link__item_text">Фитнесс-браслеты</span>
+						<div class="item__icon_block">
+							<img src="img/popular-4.png" alt="Фитнесс-браслеты" class="link__item_icon">
+						</div>
+						<span class="link__item_text">Фитнесс браслеты</span>
 					</a>
 				</li>
 				<li class="item__list">
 					<a href="#" class="link__item">
-						<img src="img/icon.png" alt="Умные часы" class="link__item_icon">
+						<div class="item__icon_block">
+							<img src="img/popular-5.png" alt="Умные часы" class="link__item_icon">
+						</div>
 						<span class="link__item_text">Умные часы</span>
 					</a>
 				</li>
 				<li class="item__list">
 					<a href="#" class="link__item">
-						<img src="img/icon.png" alt="Квадрокоптеры" class="link__item_icon">
+						<div class="item__icon_block">
+							<img src="img/popular-6.png" alt="Квадрокоптеры" class="link__item_icon">
+						</div>
 						<span class="link__item_text">Квадрокоптеры</span>
 					</a>
 				</li>
