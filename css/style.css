@@ -133,7 +133,7 @@ ul {
 .header__btn_search {
 	position: absolute;
 	right: 0;
-	bottom: 6px;
+	bottom: 5px;
 	width: 81px;
 	height: 45px;
 	padding: 0;
@@ -615,8 +615,10 @@ ul {
 }
 
 .main__info_block {
+	position: relative;
 	width: 1160px;
 	margin: 0 auto;
+	padding-bottom: 130px;
 }
 
 .main__info_block p {
@@ -630,6 +632,7 @@ ul {
 .main__info_about, .main__info_contacts {
 	float: left;
 	width: 560px;
+
 }
 
 .main__info_text {
@@ -675,8 +678,44 @@ ul {
 	border-radius: 50%;
 }
 
-.main__btn_about {
-	margin-bottom: 60px;
+.main__btn_about, .main__btn_feedback {
+	position: absolute;
+	bottom: 60px;
+}
+
+.btn__about, .btn__feedback {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 260px;
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+}
+
+.btn__about::after, .btn__feedback::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -4px;
+	width: 100%;
+	height: 8px;
+	background-color: #f0c52e;
+	z-index: -5;
+}
+
+.btn__about:hover::after, .btn__feedback:hover::after {
+	height: 100%;
+	top: 0;
+	margin-top: 0;
+}
+
+.btn__about:active, .btn__feedback:active {
+	background-color: #000;
+	color: #f0c52e;
 }
 
 
@@ -832,9 +871,22 @@ ul {
 	float: left;
 }
 
+.footer__link_logo {
+	text-transform: uppercase;
+	color: #f7e184;
+}
+
+.footer__link_logo:hover {
+	color: #f0c52e;
+}
+
+.footer__link_logo:active {
+	color: rgba(240, 197, 46, 0.3);
+}
+
 .footer__logo_text {
 	margin: 0;
-	padding: 0;
+	padding: 0;	
 }
 
 .footer__user_block {
@@ -842,7 +894,7 @@ ul {
 }
 
 .footer__menu_block {
-	margin: 0;
+	margin: 15px 0;
 	padding: 0;
 }
 
@@ -852,6 +904,66 @@ ul {
 	margin-left: 35px;
 }
 
+.footer__menu_link {
+	padding-left: 25px;
+	font-family: Open-sans;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__menu_link:hover {
+	color: #fff;
+}
+
+.footer__menu_link:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__menu_enter::before, .footer__menu_compare::before, .footer__menu_cart::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 13px;
+	height: 13px;
+	margin-right: 10px;
+	background: url(../img/sprite-userblock.png) no-repeat;
+}
+
+.footer__menu_enter::before {
+	background-position: 0 -18px;
+}
+
+.footer__menu_compare::before {
+	background-position: -17px -18px;
+}
+
+.footer__menu_cart::before {
+	background-position: -33px -18px;
+}
+
+.footer__menu_enter:hover::before {
+	background-position: 0 -3px;
+}
+
+.footer__menu_compare:hover::before {
+	background-position: -17px -3px;
+}
+
+.footer__menu_cart:hover::before {
+	background-position: -33px -3px;
+}
+
+.footer__menu_enter:active::before {
+	background-position: 0 -33px;
+}
+
+.footer__menu_compare:active::before {
+	background-position: -17px -33px;
+}
+
+.footer__menu_cart:active::before {
+	background-position: -33px -33px;
+}
+
 .footer__info_content {
 	margin-bottom: 60px;
 }
@@ -859,18 +971,26 @@ ul {
 .footer__info_adres {
 	float: left;
 	width: auto;
+	font-family: Open-sans;
+	font-size: 15px;
+	line-height: 30px;
+	color: #fff;
 	text-align: left;
 }
 
 .footer__info_tel {
 	float: right;
-	width: auto;
+	font-family: Open-sans;
+	font-size: 15px;
+	line-height: 30px;
+	color: #fff;
 	text-align: right;
 }
 
 .footer__info_services {
 	width: 50%;	
 	margin: 0 auto;
+	padding: 5px 0;
 }
 
 .info__services_menu {
@@ -882,6 +1002,22 @@ ul {
 .info__services_item {
 	display: inline-block;
 	vertical-align: middle;
+	margin: 0 15px;
+}
+
+.info__services_link {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+}
+
+.info__services_link:hover {
+	opacity: 0.6;
+}
+
+.info__services_link:active {
+	opacity: 0.3;
 }
 
 .footer_dash {
@@ -895,7 +1031,28 @@ ul {
 	float: right;
 	width: 27px;
 	height: 34px;
-	background: #f7e184;
+	font-size: 0;
+}
+
+.academy__link_hover {
+	display: none;
+}
+
+.footer__copyright_link:hover .academy__link {
+	display: none;
+}
+
+.footer__copyright_link:hover .academy__link_hover {
+	display: block;
+}
+
+.footer__copyright_link:active .academy__link {
+	display: none;
+}
+
+.footer__copyright_link:active .academy__link_hover {
+	display: block;
+	opacity: 0.3;
 }
 
 .footer__social_block {
@@ -912,4 +1069,18 @@ ul {
 .footer__social_item {
 	display: inline-block;
 	vertical-align: middle;
+	font-size: 0;
+	margin: 0 5px;
+}
+
+.footer__social_link {
+	opacity: 0.6;
+}
+
+.footer__social_link:hover {
+	opacity: 1;
+}
+
+.footer__social_link:active {
+	opacity: 0.3;
 }
