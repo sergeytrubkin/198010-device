@@ -1,0 +1,59 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -10px;
+}
+
+.sprite-cart-svg-copy {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -42px;
+}
+
+.sprite-cart-svg-copy-2 {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -74px;
+}
+
+.sprite-compare {
+    width: 10px;
+    height: 10px;
+    background-position: -10px -106px;
+}
+
+.sprite-compare-svg-copy {
+    width: 10px;
+    height: 10px;
+    background-position: -10px -136px;
+}
+
+.sprite-compare-svg-copy-2 {
+    width: 10px;
+    height: 10px;
+    background-position: -10px -166px;
+}
+
+.sprite-user {
+    width: 13px;
+    height: 12px;
+    background-position: -10px -196px;
+}
+
+.sprite-user-svg-copy {
+    width: 13px;
+    height: 12px;
+    background-position: -10px -228px;
+}
+
+.sprite-user-svg-copy-2 {
+    width: 13px;
+    height: 12px;
+    background-position: -10px -260px;
+}

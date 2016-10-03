@@ -33,9 +33,7 @@
 		</div>
 		<div class="header__bottom_menu clearfix">
 			<div class="header__catalog_items">
-				<a href="#">
-					<span class="header__bottom_text">Каталог товаров</span>
-				</a>
+				<a class="header__bottom_text header__catalog_btn">Каталог товаров</a>
 			</div>
 			<div class="header__info_block">
 				<ul class="header__info_menu">
@@ -57,25 +55,43 @@
 				</ul>
 			</div>
 		</div>
-		<div class="header__list_item">
-			<div class="header__list_item">
-				<ul>
-					<li><a href="#">Виртуальная реальность</a></li>
-					<li><a href="#">Моноподы для селфи</a></li>
-					<li><a href="#">Экшн-камеры</a></li>
-				</ul>
-			</div>
-			<div class="header__list_item">
-				<ul>
-					<li><a href="#">Фитнесс-браслеты</a></li>
-					<li><a href="#">Умные часы</a></li>
-				</ul>
-			</div>
-			<div class="header__list_item">
-				<ul>
-					<li><a href="#">Квадрокоптеры</a></li>
-				</ul>
-			</div>
+		<div class="header__catalog clearfix">
+			<ul class="header__catalog_menu">
+				<li class="header__catalog_item">
+					<a class="header__catalog_link" href="#">
+						Виртуальная реальность
+					</a>
+				</li>
+				<li class="header__catalog_item">
+					<a class="header__catalog_link" href="catalog.html">
+						Моноподы для селфи
+					</a>
+				</li>
+				<li class="header__catalog_item">
+					<a class="header__catalog_link" href="#">
+						Экшн-камеры
+					</a>
+				</li>
+			</ul>
+			<ul class="header__catalog_menu">
+				<li class="header__catalog_item">
+					<a class="header__catalog_link" href="#">
+						Фитнесс-браслеты
+					</a>
+				</li>
+				<li class="header__catalog_item">
+					<a class="header__catalog_link" href="#">
+						Умные часы
+					</a>
+				</li>
+			</ul>
+			<ul class="header__catalog_menu">
+				<li class="header__catalog_item">
+					<a class="header__catalog_link" href="#">
+						Квадрокоптеры
+					</a>
+				</li>
+			</ul>
 		</div>
 	</header>
 	<main class="main">
@@ -109,7 +125,7 @@
 					<ul class="sort__menu">
 						<li class="sort__menu_item">
 							<a href="#" class="sort__menu_link">
-								<span class="sort__link_name">По цене</span>
+								<span class="sort__link_name sort__link_active">По цене</span>
 							</a>
 						</li>
 						<li class="sort__menu_item">
@@ -123,8 +139,8 @@
 							</a>
 						</li>
 					</ul>
-					<a href="#" class="sort__arrow_btn">от большего</a>
-					<a href="#" class="sort__arrow_btn">от меньшего</a>
+					<a href="#" class="sort__arrow_btn btn__arrow_top">от большего</a>
+					<a href="#" class="sort__arrow_btn btn__arrow_down arrow__down_active">от меньшего</a>
 				</div>
 			</div>
 		</div>
@@ -132,57 +148,53 @@
 			<div class="main__filter_container">
 				<form action="#" class="main__filter_form">
 					<fieldset class="main__filter_category">
-						<div class="filter__name_category">Стоимость</div>
+						<div class="filter__category_name">Стоимость</div>
 						<div class="filter__cost_scale">
 							<div class="filter__cost_bar"></div>
+							<div class="range__toggle range__toggle_min"></div>
+							<div class="range__toggle range__toggle_max"></div>
 						</div>
-						<div class="range__toggle range__toggle_min">
-							<div class="range__toggle_btn"></div>
-							<label for="min__price" class="min__price">
-								от 
-								<input id="min__price" type="text" class="min__price_row" value="0">
-							</label>
-						</div>
-						<div class="range__toggle range__toggle_max">
-							<div class="range__toggle_btn"></div>
-							<label for="max__price" class="max__price">
-								до
-								<input id="max__price" type="text" class="max__price_row" value="5000">
-							</label>
-						</div>
+						<label for="min__price" class="min__price">
+							от 
+							<input id="min__price" type="text" class="min__price_row" value="0">
+						</label>
+						<label for="max__price" class="max__price">
+							до
+							<input id="max__price" type="text" class="max__price_row" value="5000">
+						</label>
 					</fieldset>
 					<fieldset class="main__filter_category">
 						<div class="filter__category_name">Цвет</div>
-						<label class="filter__color_name">
+						<input id="color__black" type="checkbox" class="filter__color_check" checked>
+						<label for="color__black" class="filter__color_name">
 							Черный
-							<input type="checkbox" class="filter__color_check" checked>
 						</label>
-						<label class="filter__color_name">
+						<input id="color__white" type="checkbox" class="filter__color_check">
+						<label for="color__white" class="filter__color_name">
 							Белый
-							<input type="checkbox" class="filter__color_check">
 						</label>
-						<label class="filter__color_name">
+						<input id="color__blue" type="checkbox" class="filter__color_check" checked>
+						<label for="color__blue" class="filter__color_name">
 							Синий
-							<input type="checkbox" class="filter__color_check" checked>
 						</label>
-						<label class="filter__color_name">
+						<input id="color__red" type="checkbox" class="filter__color_check" checked>
+						<label for="color__red" class="filter__color_name">
 							Красный
-							<input type="checkbox" class="filter__color_check" checked>
 						</label>
-						<label class="filter__color_name">
+						<input id="color__pink" type="checkbox" class="filter__color_check">
+						<label for="color__pink" class="filter__color_name">
 							Розовый
-							<input type="checkbox" class="filter__color_check">
 						</label>
 					</fieldset>
 					<fieldset class="main__filter_category">
 						<div class="filter__category_name">Bluetooth</div>
+						<input id="bluetooth__present" type="radio" class="filter__category_bluetooth" name="bluetooth" checked>
 						<label for="bluetooth__present" class="bluetooth__present">
 							Есть
-							<input id="bluetooth__present" type="radio" class="filter__category_bluetooth" checked>
 						</label>
+						<input id="bluetooth__no_present" type="radio" class="filter__category_bluetooth" name="bluetooth">
 						<label for="bluetooth__no_present" class="bluetooth__no_present">
 							Нет
-							<input id="bluetooth__no_present" type="radio" class="filter__category_bluetooth">
 						</label>
 					</fieldset>
 					<button type="submit" class="main__filter_btn">Показать</button>
@@ -208,7 +220,7 @@
 							<a href="#" class="item__link_compare">Добавить к сравнению</a>
 						</div>
 					</div>
-					<span class="item__name">Профессиональная селфи-палка</span>
+					<span class="item__name">Профессиональная <br> селфи-палка</span>
 					<span class="item__price">1500 руб.</span>
 				</article>
 				<article class="catalog__item">
@@ -225,13 +237,14 @@
 				<article class="catalog__item">
 					<div class="item__img_block">
 						<img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" class="item__img" width="360" height="380">
+						<span class="new__item">new</span>
 						<div class="item__link_hover">	
 							<a href="#" class="item__link_btn">В корзину</a>
 							<a href="#" class="item__link_compare">Добавить к сравнению</a>
 						</div>
 					</div>
-					<span class="item__name">Селфи-палка «Следуй за мной»</span>
-					<span class="item__price"></span>
+					<span class="item__name">Селфи-палка <br> «Следуй за мной»</span>
+					<span class="item__price">4900 руб.</span>
 				</article>
 				<div class="main__catalog_pagination">
 					<ul class="catalog__pagination_menu">
@@ -239,7 +252,7 @@
 							<a href="#" class="pagination__item_link">Назад</a>
 						</li>
 						<li class="pagination__item">
-							<a href="#" class="pagination__item_link">1</a>
+							<a href="#" class="pagination__item_link current__page">1</a>
 						</li>
 						<li class="pagination__item">
 							<a href="#" class="pagination__item_link">2</a>
@@ -255,11 +268,11 @@
 			</div>
 		</div>
 	</main>
-<footer class="footer">
+	<footer class="footer">
 		<div class="footer_container">
 			<div class="footer__top_content clearfix">
 				<div class="footer_logo">
-					<a href="" class="footer__link_logo">
+					<a href="index.html" class="footer__link_logo">
 						<h1 class="footer__logo_text">Device</h1>
 					</a>
 				</div>
