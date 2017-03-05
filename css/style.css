@@ -344,14 +344,14 @@ ul {
 	width: 100%;
 	background-color: #f7e296;
 	z-index: 100;
-	display: none;	
+	display: none;
 }
 
 .header__catalog_menu {
 	margin: 0 45px 0 60px;
 	padding: 0;
 	float: left;
-	
+
 }
 
 .header__catalog_item {
@@ -487,7 +487,7 @@ ul {
 }
 
 .features__item_value {
-	font-size: 36px; 
+	font-size: 36px;
 }
 
 .features__item_parameter {
@@ -1254,8 +1254,10 @@ ul {
 
 .main__filter_btn:hover::before {
 	height: 100%;
-	top: 0;
+	top: 50%;
 	margin-top: 0;
+  padding: 10px 0;
+  transform: translateY(-50%);
 }
 
 .main__catalog_block {
@@ -1497,7 +1499,7 @@ ul {
 
 .footer__logo_text {
 	margin: 0;
-	padding: 0;	
+	padding: 0;
 }
 
 .footer__user_block {
@@ -1599,7 +1601,7 @@ ul {
 }
 
 .footer__info_services {
-	width: 50%;	
+	width: 50%;
 	margin: 0 auto;
 	padding: 5px 0;
 }
